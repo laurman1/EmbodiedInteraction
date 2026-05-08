@@ -19,6 +19,8 @@ public class SeasonColors
     public Color[] leafcolors;
     public Color[] trunkColors;
     public Color groundColor;
+    public Color lightColor;
+    public float lightIntensity;
 }
 
 
