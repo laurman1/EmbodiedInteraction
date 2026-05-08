@@ -1,20 +1,44 @@
+using Meta.Voice.UnityOpus;
+using System.Collections.Generic;
 using UnityEngine;
+
+
+public enum Season
+{
+    Spring,
+    Summer,
+    Fall,
+    Winter
+}
+
+[System.Serializable]
+public class SeasonColors
+{
+    public Season season;
+
+    public Color[] leafcolors;
+    public Color[] trunkColors;
+    public Color groundColor;
+}
+
 
 public class SeasonControl : MonoBehaviour
 {
-    public Color topColor;
+    [SerializeField]
+    private List<SeasonColors> seasonColors;
+    
     
 
-    public Material material;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        topColor = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1);
-        //topColor = material.GetColor("LightGreen");
-
+        
+        
         
     }
+
+    
 
     // Update is called once per frame
     void Update()
@@ -22,10 +46,5 @@ public class SeasonControl : MonoBehaviour
         
     }
 
-    public void ChangeColor()
-    {
-        //material.SetColor("LightGreen", topColor);
-        material.SetVector("LightGreen", topColor);
-
-    }
+    
 }
