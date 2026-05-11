@@ -1,5 +1,7 @@
 # Breathing Forest
 
+Video showcase at the bottom.
+
 Reference: BreathVR: Leveraging Breathing as a Directly ControlledInterface for Virtual Reality Games
 https://dl.acm.org/doi/epdf/10.1145/3173574.3173914
 
@@ -53,3 +55,9 @@ https://github.com/laurman1/EmbodiedInteraction/tree/main/Assets/Laus%20rod/EI/S
 
 Using the BioSignal Plux Piezo-Electric Respiration (PZT) Sensor I record live breathing data from the user in OpenSignals app. I receive the data in Unity using LSL's provided "SimpleInletScaleObject" script. My "BreathDataHandler" script then takes the raw value and computes polishes it to compute clean peaks and troughs. Finally it passes on the 4 varibales; "short/longTermAverageBreathRate/Depth". My "EcoSystemControls" script then takes these metrics, normalizes them and using them creates the environmetal metrics that are, Fertility, Calmness and Warmth. Finally "EcoSystemEffetcts" receives them, and creates a 2D space of Fertility and Calmness and assigning the 4 seasons to specific locations in the space. This script is also where all of the environmental effects are applied.
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/abb77dbf-5a1a-47cc-9fc3-1ee40af9b47a" />
+
+#Note
+This project is made as a spin-off to the main semsester project. I made a copy of the semester Unity project, and made the Embodied Interaction project in a new scene, hence the big file. Everything related to this project is in the 'Assets/Laus rod/EI/ folder. Inside there is also the scripts folder containing the scripts i made for this project, also linked above.
+
+# Video
+https://www.youtube.com/watch?v=UG2g0TyRfzI
