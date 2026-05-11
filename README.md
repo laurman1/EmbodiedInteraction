@@ -44,10 +44,10 @@ Trees:
 - Tree Leaves and Trunk Colours: Controlled by seasons
 - Tree Amount of Leaves: Short Term Fertility (Using Motion Time Animation)
   
-<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/1538fdb3-7a9b-4a67-b9e4-7f3a39c07112" />
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/1538fdb3-7a9b-4a67-b9e4-7f3a39c07112" />
 
 # Pipeline
 CODE:
 https://github.com/laurman1/EmbodiedInteraction/tree/main/Assets/Laus%20rod/EI/Scripts
 Using the BioSignal Plux Piezo-Electric Respiration (PZT) Sensor I record live breathing data from the user in OpenSignals app. I receive the data in Unity using LSL's provided "SimpleInletScaleObject" script. My "BreathDataHandler" script then takes the raw value and computes polishes it to compute clean peaks and troughs. Finally it passes on the 4 varibales; "short/longTermAverageBreathRate/Depth". My "EcoSystemControls" script then takes these metrics, normalizes them and using them creates the environmetal metrics that are, Fertility, Calmness and Warmth. Finally "EcoSystemEffetcts" receives them, and creates a 2D space of Fertility and Calmness and assigning the 4 seasons to specific locations in the space. This script is also where all of the environmental effects are applied.
-<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/abb77dbf-5a1a-47cc-9fc3-1ee40af9b47a" />
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/abb77dbf-5a1a-47cc-9fc3-1ee40af9b47a" />
