@@ -42,9 +42,9 @@ Material:
     - _QueueOffset: 0
     - _visibility: 1
     m_Colors:
-    - _DarkGreen: {r: 0.28964764, g: 0.2523102, b: 0.17979538, a: 0}
-    - _LightGreen: {r: 0.6369185, g: 0.5464775, b: 0.3748738, a: 0}
-    - _MidGreen: {r: 0.4290334, g: 0.3686824, b: 0.25104102, a: 0}
+    - _DarkGreen: {r: 0.26398876, g: 0.2332203, b: 0.16781497, a: 0}
+    - _LightGreen: {r: 0.592972, g: 0.5194446, b: 0.36851427, a: 0}
+    - _MidGreen: {r: 0.4008982, g: 0.35049206, b: 0.24504122, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &6995104509321621412
